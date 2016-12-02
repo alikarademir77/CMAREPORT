@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="CMAReportApp">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>AngularJS UI Bootstrap Modal Demo</title>
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" /> 
+</head>
+<body
+<div ng-controller="MainCtrl as vm">
+<ng-include src="'modalform.html'"></ng-include>
+
+<div class="container">
+    <br />
+    <button class="btn btn-primary" ng-click="vm.open()">Open Modal</button>
+</div>
+ 
+<!-- Vendor Libraries -->
+<script src="lib/angular/angular.js"></script>
+<script src="lib/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+<script src="lib/jquery/dist/jquery.min.js"></script>
+ 
+<!-- App -->
+<script src="cmareport_min.js"></script>
+</div>
+
+</body>
+</html>
